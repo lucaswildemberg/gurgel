@@ -146,7 +146,7 @@ jQuery(function ($) {
                 navbar.removeClass('hidden').addClass('visible');
 
                 // Top
-                if ($(window).scrollTop() <= 100) {
+                if ($(window).scrollTop() <= 15) {
                     navbar.removeClass('navbar-sticky');
 
                 } else {
