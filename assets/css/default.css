@@ -123,8 +123,8 @@
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid;
-    border-color: var(--white-color);
-    color: var(--white-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
     font-weight: 500;
     -webkit-transition: all .4s ease-out 0s;
     -o-transition: all .4s ease-out 0s;

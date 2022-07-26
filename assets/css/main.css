@@ -2739,7 +2739,7 @@ header .navbar-expand .navbar-brand .featured .first {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--dark-grey-color);
     transition-timing-function: cubic-bezier(.25, .25, .75, .75);
     transition-duration: 0.4s;
     transition-property: opacity, transform;
