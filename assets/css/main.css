@@ -291,7 +291,7 @@ h1 .featured.bottom:before {
 }
 
 .odd h1 .featured.bottom:before {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 h1 .pre-title {
@@ -342,7 +342,7 @@ h2 .featured:before {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    background-color: var(--primary-color);
+    background-color: #3F9797;
     opacity: 0.15;
 }
 
@@ -650,10 +650,10 @@ section {
 section.hero       { background-color: var(--hero-bg-color); }
 section.section-1  { background-color: var(--section-1-bg-color);  background-image: var(--section-1-bg-image); }
 section.section-2  { background-color: var(--section-2-bg-color);  background-image: var(--section-2-bg-image); }
-section.section-3  {background-color: var(--section-3-bg-color);background-image: url('../images/bg-5.jpg');background-position: center;background-attachment: inherit;}
+section.section-3  { background-color: var(--section-5-bg-color);  background-image: var(--section-5-bg-image); }
 section.section-4  { background-color: var(--section-4-bg-color);  background-image: var(--section-4-bg-image); }
 section.section-5  { background-color: var(--section-5-bg-color);  background-image: var(--section-5-bg-image); }
-section.section-6  {background-color: var(--section-6-bg-color);background-image: var(--section-6-bg-image);background-attachment: inherit;background-position: bottom;background-position-y: 95%;}
+section.section-6  {background-color: var(--section-6-bg-color);background-image: var(--section-6-bg-image);background-attachment: inherit;background-position: top;background-position-y: 75%;}
 section.section-7  { background-color: var(--section-7-bg-color);  background-image: var(--section-7-bg-image); }
 section.section-8  { background-color: var(--section-8-bg-color);  background-image: var(--section-8-bg-image); }
 section.section-9  { background-color: var(--section-9-bg-color);  background-image: var(--section-9-bg-image); }
@@ -680,7 +680,7 @@ section.featured:after {
     left: calc(50% - 75px);
     width: 150px;
     height: 150px;
-    background-image: url(../../assets/textures/bullets.png);
+    background-image: url(../../assets/textures/bullets.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1683,6 +1683,14 @@ aside {
     text-align: center;
     line-height: 45px;
     font-size: 20px;
+    -webkit-transition: all .2s ease-out 0s;
+    -o-transition: all .2s ease-out 0s;
+    -moz-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s;
+}
+
+.contacts i:hover {
+    background: var(--secondary-color);
 }
 
 .form .message {
@@ -1918,7 +1926,7 @@ header .navbar-expand .navbar-brand .featured .first {
 .navbar-expand.top .navbar-nav .nav-item a:not(.btn) {
     font-size: 0.9rem;
     font-weight: 400;
-    color: var(--secondary-p-color);
+    color: var(--white-color);
 }
 
 .navbar-expand.top .navbar-nav .nav-item a:not(.btn):hover {
@@ -2731,7 +2739,7 @@ header .navbar-expand .navbar-brand .featured .first {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark-grey-color);
+    background-color: var(--primary-color);
     transition-timing-function: cubic-bezier(.25, .25, .75, .75);
     transition-duration: 0.4s;
     transition-property: opacity, transform;
@@ -3113,18 +3121,34 @@ header .navbar-expand .navbar-brand .featured .first {
 .sidebar .share-list {
     margin: 0;
 }
-
+.team .share-list .nav-link i {
+width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: var(--primary-color);
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+    transition: all 0.2s ease-out 0s;
+    -webkit-transition: all .2s ease-out 0s;
+    -o-transition: all .2s ease-out 0s;
+    -moz-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s;
+}
 .share-list .nav-link i {
     width: 40px;
     height: 40px;
     margin-right: 5px;
     display: inline-block;
-    background: #fff;
+    background: var(--primary-bg-color-3);
     border-radius: 100px;
     text-align: center;
     line-height: 40px;
     font-size: 18px;
-    color: var(--primary-color);
+    color: var(--white-color);
     -webkit-transition: all .2s ease-out 0s;
     -o-transition: all .2s ease-out 0s;
     -moz-transition: all .2s ease-out 0s;
@@ -3132,7 +3156,7 @@ header .navbar-expand .navbar-brand .featured .first {
 }
 
 .share-list .nav-link i:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white-color);
 }
 
@@ -3146,6 +3170,10 @@ header .navbar-expand .navbar-brand .featured .first {
 
 .share-list .nav-link {
     padding: 0;
+}
+
+.share-list .nav-link:hover a {
+    background-color: var(--secondary-color);
 }
 
 .image-over {
@@ -4037,7 +4065,7 @@ footer .nav-item .nav-link:hover {
 }
 
 footer .copyright {
-    background-color: var(--primary-l-color);
+    background-color: #143635;
 }
 
 footer .copyright p {
@@ -4781,7 +4809,7 @@ footer .copyright p {
 	 filter: brightness(0) invert(1);
 }
 .section-contact {
-	background: #102228;
+	background: #1B4948;
 	padding-bottom: 60px;
 }
 @media (max-width: 767px) {
