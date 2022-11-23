@@ -2249,7 +2249,7 @@ header .navbar-expand .navbar-brand .featured .first {
 }
 
 .slider-h-100.slider-h-auto {
-    min-height: calc(100vh - 50px);
+    /* min-height: calc(100vh - 50px); */
 }
 
 .slider-h-85 {
@@ -3121,23 +3121,7 @@ header .navbar-expand .navbar-brand .featured .first {
 .sidebar .share-list {
     margin: 0;
 }
-.team .share-list .nav-link i {
-width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
-    font-size: 18px;
-    color: var(--primary-color);
-    background: rgb(255, 255, 255);
-    border-radius: 100px;
-    transition: all 0.2s ease-out 0s;
-    -webkit-transition: all .2s ease-out 0s;
-    -o-transition: all .2s ease-out 0s;
-    -moz-transition: all .2s ease-out 0s;
-    transition: all .2s ease-out 0s;
-}
+.team .share-list .nav-link i {width: 40px;height: 40px;margin-right: 5px;display: inline-block;text-align: center;line-height: 40px;font-size: 18px;color: var(--primary-color);background: rgb(235 235 235);border-radius: 100px;transition: all 0.2s ease-out 0s;-webkit-transition: all .2s ease-out 0s;-o-transition: all .2s ease-out 0s;-moz-transition: all .2s ease-out 0s;transition: all .2s ease-out 0s;}
 .share-list .nav-link i {
     width: 40px;
     height: 40px;
@@ -3311,7 +3295,7 @@ width: 40px;
 }
 
 .full-image[data-mask="50"] {
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .full-image[data-mask="40"] {
@@ -3368,7 +3352,7 @@ width: 40px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 
 .fit-image.w-85 {
@@ -4130,6 +4114,7 @@ footer .copyright p {
     font-weight: 700;
     color: var(--primary-t-color);
     border-radius: 0;
+    background: #f1f1f1;
 }
 
 .odd .modal-header {
@@ -4177,7 +4162,6 @@ footer .copyright p {
 .modal-body {
     width: 100%;
     display: flex;
-    align-items: center;
     padding: 25px 25px 75px;
     flex-direction: column;
 }
@@ -4302,7 +4286,7 @@ footer .copyright p {
     }
 
     body .full-slider .inner .right, .no-slider .inner .right {
-        width: 65%;
+        width: 45%;
     }
 
     body .full-slider.featured .inner .left:before,
